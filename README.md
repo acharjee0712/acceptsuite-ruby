@@ -26,9 +26,10 @@ https://developer.authorize.net/api/reference/features/customer_profiles.html#Us
 ## Integration
 Constants.js file consists of required URLs that are used for WEB API calls and constant parameters that are used throughout the application.
 
-
 URL format when deployed in Heroku
 https://<applicationname>.herokuapp.com/index_all.html
+
+Below are the sample URLs of web api methods
 
 * AcceptJSRequestUrl : URL to invoke Accept JS web service on payment.
 ![Image of AcceptJSRequestUrl](Github-Images/AcceptJSRequestUrl.PNG)
@@ -66,7 +67,7 @@ The following are the parameters with values that remains constant throughout th
 
 *   Run "git commit –am <Comments>" command to commit the changes to heroku git.
 
-*	Finally, run the command “git push heroku master” which will do the deployment.
+*	Finally, run the command “git push heroku master” which will do the deployment. Deployed URL will be displayed on successful deployment.
 
 ## browse the website
 
