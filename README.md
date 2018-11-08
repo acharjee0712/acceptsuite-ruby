@@ -1,4 +1,4 @@
-# Accept Suite Integration with .Net Core WEB API
+# Accept Suite Integration with Ruby on Rails WEB API
 
 One Paragraph of project description goes here
 
@@ -7,9 +7,8 @@ One Paragraph of project description goes here
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ## Prerequisite:
-*	Windows 10 Professional
 *	Sublime Text or any editor of your choice.
-*	Internet Information Services 10
+*	Heroku account (New account can be created using the link https://signup.heroku.com/)
 
 ## Very detailed explanation of each product type.
 Authorized.Net Accept suite has below products.
@@ -28,8 +27,8 @@ https://developer.authorize.net/api/reference/features/customer_profiles.html#Us
 Constants.js file consists of required URLs that are used for WEB API calls and constant parameters that are used throughout the application.
 
 
-The URLs should be provided with IP address and API service site port number in the following format.
-https://IPAddress:PortNumber/api/AcceptSuite/<ApiMethodName>
+URL format when deployed in Heroku
+https://<applicationname>.herokuapp.com/index_all.html
 
 * AcceptJSRequestUrl : URL to invoke Accept JS web service on payment.
 ![Image of AcceptJSRequestUrl](Github-Images/AcceptJSRequestUrl.PNG)
@@ -44,36 +43,33 @@ https://IPAddress:PortNumber/api/AcceptSuite/<ApiMethodName>
 The following are the parameters with values that remains constant throughout the application. These parameters are used in script through Ajax calls for performing payments.
 
 * ClientKey 
-
-![Image of clientKey](Github-Images/clientKey.PNG)
-
 * ApiLoginID
-
-![Image of apiLogin](Github-Images/apiLogin.PNG)
-
 * ApiTransactionKey
 
-![Image of apiTransactionKey](Github-Images/apiTransactionKey.PNG)
+### Steps to deploy the application in Heroku
 
+*	Open the command prompt
 
-### Create Website on IIS
+*	Run the command "heroku login"  and provide the login credentials for heroku.
 
-*	Open IIS as Administrator.
+*	Go inside the application root folder path where index_all.html file exists and run the command "git init" (before running the command, delete the git folder in the root path if exists)
 
-*	Right click on sites and select “Add Website”. 
+*	Run the command "heroku create <applicationName>". Eg:- heroku create accepsuitui
 
-*	Provide Site name and physical path to the app’s deployment folder(C:\inetpub\wwwroot\Publish)
+* 	Check the remote URL using the command “git remote -v”. it should be the created app git URL.
+       Eg:- heroku  https://git.heroku.com/accepsuitui.git (fetch)
+            heroku  https://git.heroku.com/accepsuitui.git (push)
 
-*	Choose https binding.
+*   Run “git status” command, it will provide the details of file not pushed to heroku git.
 
-* 	Select SSL Certificate from drop down.
+*   Run the command “git add .” to add the untracked file to heroku git.
 
-*   Click OK.
+*   Run "git commit –am <Comments>" command to commit the changes to heroku git.
 
-	![Add-Website](Github-Images/Add-Website.png)
+*	Finally, run the command “git push heroku master” which will do the deployment.
 
 ## browse the website
 
-Sample URL: https://10.173.192.248:5008/index_all.html
+Sample URL: https://accepsuitui.herokuapp.com/index_all.html
 
 ![Image of dashboard](Github-Images/dashboard.PNG)
