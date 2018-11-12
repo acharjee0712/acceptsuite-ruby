@@ -27,7 +27,7 @@ https://developer.authorize.net/api/reference/features/customer_profiles.html#Us
 Constants.js file consists of required URLs that are used for WEB API calls and constant parameters that are used throughout the application.
 
 URL format when deployed in Heroku
-https://<applicationname>.herokuapp.com/index_all.html
+https://APPLICATIONNAME.herokuapp.com/index_all.html
 
 Below are the sample URLs of web api methods
 
