@@ -1,8 +1,8 @@
-Accept Suite
+# Accept Suite
 
 Developer Guide to deploy the .Net CoreRuby on Rails Web API Application on Heroku.
 
-Prerequisite
+## Prerequisite
 
 * Ruby 2.2.2 or higher
 * RubyGem 1.3.6 or higher (To build the gem)
@@ -10,7 +10,7 @@ Prerequisite
 * Sublime Text or any editor of your choice.
 * Heroku account (New account can be created using the link https://signup.heroku.com/)
 
-Steps to deploy the web API in Heroku
+## Steps to deploy the web API in Heroku
 
 * Open the command prompt and navigate to the root folder of Web API.
 * Run the command "bundle update" to generate the Gemfile.lock file which will have all the required dependencied for the project(Used while deployment).
@@ -25,13 +25,13 @@ Steps to deploy the web API in Heroku
 * Run "git commit –am <Comments>" command to commit the changes to heroku git.
 * Finally, run the command “git push heroku master” which will do the deployment. Deployed URL will be displayed on successful deployment.
 
-URL format of Accept Suite WEB 
+## URL format of Accept Suite WEB 
 
 https://APPLICATIONNAME.herokuapp.com/acceptsuite/METHODNAME?REQUIREDQUERYPARAMETERS
 
 Eg:- https://acceptsuitesruby.herokuapp.com/acceptsuite/acceptJs?apiLoginId=VALUE&apiTransactionKey=VALUE&Token=VALUE
 
-QueryParameter Details
+## QueryParameter Details
 
 1. AcceptJs and AcceptJS UI - apiLoginId, apiTransactionKey, Token
 2. AcceptHosted without customer profile - apiLoginId, apiTransactionKey, iframeCommunicatorUrl
