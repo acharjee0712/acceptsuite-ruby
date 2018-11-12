@@ -22,7 +22,7 @@ Developer Guide to deploy the .Net CoreRuby on Rails Web API Application on Hero
             heroku  https://git.heroku.com/accepsuitwebapiruby.git (push)
 * Run “git status” command, it will provide the details of file not pushed to heroku git.
 * Run the command “git add .” to add the untracked file to heroku git.
-* Run "git commit –am <Comments>" command to commit the changes to heroku git.
+* Run "git commit –am "PUSH_COMMENT"" command to commit the changes to heroku git.
 * Finally, run the command “git push heroku master” which will do the deployment. Deployed URL will be displayed on successful deployment.
 
 ## URL format of Accept Suite WEB 

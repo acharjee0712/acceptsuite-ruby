@@ -57,7 +57,7 @@ The following are the parameters with values that remains constant throughout th
 
 *	Run the command "heroku create <applicationName>". Eg:- heroku create accepsuitui
 
-* 	Check the remote URL using the command “git remote -v”. it should be the created app git URL.
+* 	Check the remote URL using the command “git remote -v”. it should be the created app's git URL.
        Eg:- heroku  https://git.heroku.com/accepsuitui.git (fetch)
             heroku  https://git.heroku.com/accepsuitui.git (push)
 
@@ -65,7 +65,7 @@ The following are the parameters with values that remains constant throughout th
 
 *   Run the command “git add .” to add the untracked file to heroku git.
 
-*   Run "git commit –am <Comments>" command to commit the changes to heroku git.
+*   Run "git commit –am "PUSH_COMMENT"" command to commit the changes to heroku git.
 
 *	Finally, run the command “git push heroku master” which will do the deployment. Deployed URL will be displayed on successful deployment.
 
