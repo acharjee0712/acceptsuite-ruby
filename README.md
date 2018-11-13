@@ -9,6 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 ## Prerequisite:
 *	Sublime Text or any editor of your choice.
 *	Heroku account (New account can be created using the link https://signup.heroku.com/)
+*   Downlaod and install Heroku CLI using the link https://devcenter.heroku.com/articles/heroku-cli#download-and-install
 
 ## Very detailed explanation of each product type.
 Authorized.Net Accept suite has below products.

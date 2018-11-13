@@ -9,6 +9,7 @@ Developer Guide to deploy the .Net CoreRuby on Rails Web API Application on Hero
 * Bundle 1.6 or higher 
 * Sublime Text or any editor of your choice.
 * Heroku account (New account can be created using the link https://signup.heroku.com/)
+* Downlaod and install Heroku CLI using the link https://devcenter.heroku.com/articles/heroku-cli#download-and-install
 
 ## Steps to deploy the web API in Heroku
 
